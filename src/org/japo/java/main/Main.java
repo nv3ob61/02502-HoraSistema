@@ -33,12 +33,9 @@ public class Main {
         System.out.printf("Hora del sistema.1...: %tT%n", date);
         System.out.printf("Hora del sistema.2...: %1$tH:%1$tM:%1$tS %n", date);
 
-        /* Dándole un poco la vueltaaa
-        //Especificamos el formato de la fecha */
+        
+        //Especificamos el formato de la fecha
         SimpleDateFormat SDF = new SimpleDateFormat("HH:mm:ss");
-
-        //date = llamada al tiempo en milisegundos
-        date = new Date(System.currentTimeMillis());
 
         // Lo pasamos a un string para que se pueda manipular
         String fecha = SDF.format(date);
